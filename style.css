@@ -1,0 +1,179 @@
+/*General Styling*/
+
+*{
+  box-sizing: border-box;
+}
+/*padding adds additional height to header*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, .btn {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #1bbc9b;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .btn:hover{
+    background: white;
+    color: #1bbc9b;
+  }
+  section{
+    padding: 40px 10px;
+  }
+
+
+nav{
+  background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+  margin-top: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+  padding-left: 15px;
+  padding right: 15px;
+  border-radius: 8px;
+
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: black;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/*Header Styling*/
+
+header {
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  height: 600px;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+/*Features styline*/
+
+.features{
+  text-align: center;
+}
+
+.features article {
+  width: 24%;
+  display: inline-block;
+  padding: 10px
+}
+
+.features article .btn {
+  color: #1bbc9b;
+  background: white;
+  border: 2px solid #1bbc9b;
+}
+
+/*Mockup section*/
+
+.mockup {
+  background-color: #3f4a50;
+  background-image: url(../images/mockup-bg.jpg);
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+/*Clients Section*/
+
+.clients {
+  background: #1bbc9b;
+  color: white;
+  text-align: center;
+  }
+
+.clients .btn {
+  border: 2px white solid;
+  transition: all .3s ease;
+}
+
+.clients ul li{
+  display: inline-block;;
+}
+
+.clients ul li img{
+  max-width: 150px;
+}
+
+.clients .btn:hover{
+  background: white;
+  color: #1bbc9b;
+}
+
+/*Footer Section*/
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 40px;
+}
+
+
+footer ul{
+  text-align: center;
+}
+
+footer ul li{
+  display: inline;
+}
+
+footer ul li img{
+  transition: opacity .3s ease;
+}
+
+footer ul li img:hover{
+  opacity: .5;
+}
+
+/*Media Queries*/
+
+@media (max-width: 768px) {
+  nav ul {float: none;}
+  nav {text-align: center; padding: 20px 0;
+}
+.features article {
+  width: 100%;
+  display: block;
+}
+.mockup img{
+  max-width: 100%;
+}
+}
